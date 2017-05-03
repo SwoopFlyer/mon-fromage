@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" />
+		<title>Liste</title>
+		<script src="w3library.js"></script>
+
+</head>
+<body>
+
+<h2>Liste des fromages:</h2>
+<p>
+<input oninput="w3.filterHTML('#myTable', '.item', this.value)" placeholder="Rechercher un fromage..">
+</p>
+<table id="myTable">
+  <tr>
+    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(1)')" style="cursor:pointer">Nom des fromages</th>
+    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(2)')" style="cursor:pointer">Provenance</th>
+    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(3)')" style="cursor:pointer">Prix pour 100g</th>
+  </tr>
+  <tr class="item">
+    <td><a href="fromage/apenzeller.html">Appenzeller</td>
+	<td><img src="provenance/appenzellri.png" alt="appenzellri.png" width="64" height="64" /></td>
+    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.80</td>
+
+  </tr>
+  <tr class="item">
+    <td><a href="fromage/emmental.html">Emmental</td>
+    <td><img src="provenance/berne.png" alt="berne.png" width="64" height="64" /></td>
+    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.50</td>
+  </tr>
+  <tr class="item">
+    <td><a href="fromage/gruyere.html">Gruyère</td>
+    <td><img src="provenance/fribourg.png" alt="fribourg.png" width="64" height="64" /></td>
+    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.65</td>
+  </tr>
+  <tr class="item">
+    <td><a href="fromage/sbrinz.html">Sbrinz</td>
+    <td><img src="provenance/berne.png" alt="berne.png" width="64" height="64" /></td>
+    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.30</td>
+  </tr>
+  <tr class="item">
+    <td><a href="fromage/tete-de-moine.html">Tête-de-moine</td>
+    <td><img src="provenance/berne.png" alt="berne.png" width="64" height="64" /></td>
+    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.10</td>
+  </tr>
+  <tr class="item">
+    <td><a href="fromage/formagella.html">Formagella</td>
+    <td><img src="provenance/tessin.png" alt="tessin.png" width="64" height="64" /></td>
+    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.95</td>
+  </tr>
+  <tr class="item">
+    <td><a href="fromage/vacherin.html">Vacherin</td>
+    <td><img src="provenance/fribourg.png" alt="fribourg.png" width="64" height="64" /></td>
+    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.90</td>
+  </tr>
+  <tr class="item">
+    <td><a href="fromage/raclette.html">Raclette</td>
+    <td><img src="provenance/valais.png" alt="valais.png" width="64" height="64" /></td>
+    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2.50</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+
+
+</body>
+</html>

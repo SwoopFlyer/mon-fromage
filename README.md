@@ -1,18 +1,18 @@
-# fromage
+#LE PROJET DES FROMAGES
 
-> A Vue.js project
+*ENZO
+ login + fiche utilisateur au plus tard le 24 mai
 
-## Build Setup
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
 
-# build for production with minification
-npm run build
-```
+*ALI
+créer les fiches dans une base de donnée env 2semaines (17 mai)
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+
+*MARC
+
+-remplissages et création des fiches fromages + espace commentaires
+17mai

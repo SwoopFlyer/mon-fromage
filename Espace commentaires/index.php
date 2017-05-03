@@ -1,13 +1,14 @@
-<!DOCTYPE php>
-<html lang="en">
-  <head>
-<php> 
-$bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_commentaires;charset=utf8','root','');
+<meta charset="utf-8" />
+<?php
+$bdd = new PDO('mysql:host=127.0.0.1:5984;dbname=espace_commentaires;charset=utf8','root','');
 if(isset($_GET['id']) AND !empty($_GET['id'])) {
+
+
    $getid = htmlspecialchars($_GET['id']);
    $article = $bdd->prepare('SELECT * FROM articles WHERE id = ?');
    $article->execute(array($getid));
    $article = $article->fetch();
+
    if(isset($_POST['submit_commentaire'])) {
       if(isset($_POST['pseudo'],$_POST['commentaire']) AND !empty($_POST['pseudo']) AND !empty($_POST['commentaire'])) {
          $pseudo = htmlspecialchars($_POST['pseudo']);
@@ -43,22 +44,3 @@ if(isset($_GET['id']) AND !empty($_GET['id'])) {
 <?php
 }
 ?>
-</php>
-    <meta charset="utf-8">
-    <title>fromage</title>
-    <link rel="stylesheet" href="../style.css" />
-
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
-    	<h1>Les différents fromages suisses et leurs utilisations</h1>
-
-	<h2>L'APENZELLER:</h2>
-
-<a href="../index.html" class="button">HOME</a>
-	</ul>
-
-
-  </body>
-</html>

@@ -1,24 +1,27 @@
 .button {
-	display: block;
-	height: 100px;
-	width: 300px;
-	background: #7FFF00;
+	display: block;/* type de bouton */
+	height: 50px; /* taille hauteur */
+	width: 150px;  /* taille largueur */
+	background: #7FFF00; /* couleur derrière le texte */
 	border: 2px solid rgba(0, 0, 0, 0.59);
-  color: rgb(0,0,0);
-	text-align: center;
-	font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  color: rgb(0,0,0); /* couleur police (noir) */
+	text-align: center; /* positionnement */
+	font: bold 1.6em/50px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; /*  police ; taille et position */
 	-khtml-border-radius: 1000px;
 	-moz-border-radius: 1000px;
 	border-radius: 50px;
   -webkit-box-shadow: 0 8px 0 #1b383b;
 	-moz-box-shadow: 0 8px 0 #1b383b;
-<<<<<<< HEAD
-	box-shadow: 0 8px 0 #1b383b;
+<<<<<<< HEAD 
+	box-shadow: 0 8px 0 #1b383b;  /* ombre du bouton */
+	position: relative;
+	right: -1000px;
+	top: -100px;  /* position du bouton */
 }
 
 body {
-	background-image: url("background.gif");
-}
+	background-image: url("background.gif"); /* arrière plan des pages */
+}	
 
 
 #menu-demo2, #menu-demo2 ul{
@@ -181,3 +184,46 @@ th {
 	text-align:center;
 	Font-size: 20pt
 }
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>

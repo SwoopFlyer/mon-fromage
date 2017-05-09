@@ -2,27 +2,30 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css" />
-		<title>Liste</title>
-		<script src="w3library.js"></script>
+		<link rel="stylesheet" href="style.css" />  <!-- aller chercher les fonctions css dans ce fichier --> 
+		<title>Liste</title> <!-- Nom de la page --> 
+		<script src="w3library.js"></script> <!-- aller chercher les fonctions de script dans ce fichier --> 
 
 </head>
 <body>
 
-<h2>Liste des fromages:</h2>
+<h2>Liste des fromages:</h2> <!-- Texte type h2 en haut de page --> 
 <p>
-<input oninput="w3.filterHTML('#myTable', '.item', this.value)" placeholder="Rechercher un fromage..">
-</p>
-<table id="myTable">
-  <tr>
-    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(1)')" style="cursor:pointer">Nom des fromages</th>
+<input oninput="w3.filterHTML('#myTable', '.item', this.value)" placeholder="Rechercher un fromage.."> </p> 
+<!-- création d'une zone de saisie, recherche dans le myTable, texte inscrit si non utiliser --> 
+<table id="myTable"> <!-- Création d'un tableau - myTable --> 
+  <tr> <!-- 3 colonne dans le tableau --> 
+    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(1)')" style="cursor:pointer">Nom des fromages</th> 
+	<!-- Au moment du clique, trier selon l'item 1 -->
     <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(2)')" style="cursor:pointer">Provenance</th>
+		<!-- Au moment du clique, trier selon l'item 2 -->
     <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(3)')" style="cursor:pointer">Prix pour 100g</th>
-  </tr>
+		<!-- Au moment du clique, trier selon l'item 3 -->
+  </tr> <!-- Chaque tr est une ligne avec un élément dans le tableau --> 
   <tr class="item">
     <td><a href="fromage/apenzeller.html">Appenzeller</td>
-	<td><img src="provenance/appenzellri.png" alt="appenzellri.png" width="64" height="64" /></td>
-    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.80</td>
+	<td><img src="provenance/appenzellri.png" alt="appenzellri.png" width="64" height="64" /></td> <!-- logo de provenance avec la taille --> 
+    <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1.80</td> <!-- &emsp; permet de faire des espace ; mieux centrer ; méthode "moche" --> 
 
   </tr>
   <tr class="item">

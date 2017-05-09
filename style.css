@@ -24,16 +24,16 @@ body {
 }	
 
 
-#menu-demo2, #menu-demo2 ul{
-padding:0;
-margin:0;
+#menu-demo2, #menu-demo2 ul{ /* code css du menu défilement - la liste*/  
+padding:0; /* espace autour de l'objet de 0 */
+margin:0; /* marge autour de l'objet = 0 */
 list-style:none;
-text-align:center;
+text-align:center; /* aligner les textes (==> les boutons aussi) au centre */
 }
-#menu-demo2 li{
-display:inline-block;
-position:relative;
-border-radius:8px 8px 0 0;
+#menu-demo2 li{ 
+display:inline-block; /* type de l'objet : block par défault */
+position:relative; /* position */
+border-radius:8px 8px; /* Taille des bords ==> change la forme ; cercle p.ex si plus grand */
 }
 #menu-demo2 ul li{
 display:inherit;
@@ -52,12 +52,12 @@ max-height:0;
 left: 0;
 right: 0;
 overflow:hidden;
--moz-transition: .8s all .3s;
+-moz-transition: .8s all .3s; /* vitesse d'affichage / transition des menus */
 -webkit-transition: .8s all .3s;
 transition: .8s all .3s;
 }
 #menu-demo2 li:hover ul{
-max-height:15em;
+max-height:15em; /* taille max de l'objet ; 15 x taille du font */
 }
 /* background des liens menus */
 #menu-demo2 li:first-child{
@@ -110,120 +110,38 @@ background:#CFFF6A;
 #menu-demo2 a{
 text-decoration:none;
 display:block;
-padding:128px 128px;
+padding:128px 128px; /* taille des menu principaux */
 color:#fff;
-font-family:arial;
+font-family:arial; 
 }
 #menu-demo2 ul a{
-padding:8px 0;
-}
+padding:8px 0; /* espace autour du texte du sous menu */
+} 
 #menu-demo2 li:hover li a{
 color:#fff;
-text-transform:inherit;
+text-transform:inherit;  /* même propriétés que l'élément plus haut */
 }
 #menu-demo2 li:hover a, #menu-demo2 li li:hover a{
 color:#000;
 }
 
-
-
-
-#myInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-}
-
-#myUL {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#myUL li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-}
-
-#myUL li a.header {
-    background-color: #e2e2e2; /* Add a darker background color for headers */
-    cursor: default; /* Change cursor style */
-}
-
-#myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-}
-
+/* Propriétés du tableau */
 table {
-    border-collapse: collapse;
-    width: 100%;
+    border-collapse: collapse; /* séparation des lignes fusionner =/= separate */
+    width: 100%; /* taille du tableau sur la page */
 }
 
 th, td {
-    text-align: left;
-    padding: 8px;
+    text-align: left; /* aligner le texte à gauche */
+    padding: 8px; /* autour du texte laisser 8px - case de saisie +/- */
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even){background-color: #f2f2f2} /* un tr sur 2 a la couleur f2f2f2 (+/- blanc) */
 
 th {
-    background-color: black;
-    color: white;
-	text-align:center;
-	Font-size: 20pt
+    background-color: black; /* arrière plan des th (titres) ==> noir */
+    color: white; /* couleur d'écriture des th (titre) ==> blanc */
+	text-align:center; /* centrer le texte des th (titres)*/
+	Font-size: 20pt /* taille de police des th (titres) */
 }
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myUL li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
-}
-
-#myUL li a.header {
-  background-color: #e2e2e2;
-  cursor: default;
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
-</style>

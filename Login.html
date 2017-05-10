@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>fromage</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+.title {
+
+  font-size: 30px }
+    </style>
+  </head>
+  <body>
+    <script language="javascript">
+    <!--//
+    /*This Script allows people to enter by using a form that asks for a
+    UserID and Password*/
+    function pasuser(form) {
+    if (form.id.value=="JavaScript") {
+    if (form.pass.value=="Kit") {
+    location="page2.html"
+    } else {
+    alert("Invalid Password")
+    }
+    } else {  alert("Invalid UserID")
+    }
+    }
+    //-->
+    </script>
+
+    <center>
+
+    <div class=title><center><h1><i><b>Login
+    Area</b></i></h1></center>
+    <div class=title><tr><td><h1><i><b>UserID:</b></i></h1></td><td><form name="login"><input
+    name="id" type="text"></td></tr>
+    <div class=title><tr><td><h1><i><b>Password:</b></i></h1></td><td><input name="pass"
+    type="password"></td></tr>
+  <center><input type="button" value="Login"
+    onClick="pasuser(this.form)"></center><center><br><input
+    type="Reset"></form></table></center>
+    <div id="app"></div>
+    <script src="/dist/build.js"></script>
+    <center><input type=button onClick="parent.location='nouv-compte.html'" value='Créer un compte'>
+  </body>
+</html>

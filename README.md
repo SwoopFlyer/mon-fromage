@@ -1,18 +1,7 @@
 # fromage
+RÉALISATION D'UN SITE SUR LE FROMAGE
 
-> A Vue.js project
+-création d'une base de données en local puis "couch db"--> voir prof le 24mai Ali
+-création d'un log in et d'un espace commentaires en cours --> fini pour le 24mai Marc
+-compléter des fiches de fromages et de recettes. en cours fini le 17 mai. Enzo
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

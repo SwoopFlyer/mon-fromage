@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-
+    <script src="Login.js"></script>
     <title>fromage</title>
     <link rel="stylesheet" href="style.css" />
     <style>
@@ -19,7 +19,7 @@
     function pasuser(form) {
     if (form.id.value=="JavaScript") {
     if (form.pass.value=="Kit") {
-    location="page2.html"
+    location="register.html"
     } else {
     alert("Invalid Password")
     }
@@ -44,7 +44,14 @@
     <script src="/dist/build.js"></script>
     <center><input type=button onClick="parent.location='nouv-compte.html'" value='Créer un compte'>
   </body>
-
+  <body>
+    <div id="accountButtons">
+      <form method="GET" action="" id="accountForm">
+        <input type="text" name="username" value="" placeholder="Nom d'utilisateur">
+        <input type="password" name="password" value="" placeholder="Mot de passe">
+        <button type="button" onclick="connect()">  Se connecter    </button>
+        <button type="button" onclick="window.location = 'Register/Register.html';">     Créer un compte </button>
+  </form>
 
 </form>
 </html>

@@ -2,12 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"> <!-- Toype d'encodage d'écriture -->
-    <link rel="stylesheet" href="style.css" />  <!-- aller chercher les fonctions css dans ce fichier --> 
-    <title>fromage</title> <!-- Nom de la page --> 
+    <link rel="stylesheet" href="style.css" />  <!-- aller chercher les fonctions css dans ce fichier -->
+    <title>fromage</title> <!-- Nom de la page -->
 
   </head>
 
   <body>
+    <script language="javascript">
+    <!--//
+    /*This Script allows people to enter by using a form that asks for a
+    UserID and Password*/
+    function pasuser(form) {
+    if (form.id.value=="JavaScript") {
+    if (form.pass.value=="Kit") {
+    location="page2.html"
+    } else {
+    alert("Invalid Password")
+    }
+    } else {  alert("Invalid UserID")
+    }
+    }
+    //-->
+    </script>
+
+    <h1><i><b></b></i></h1><form name="login"><input
+    name="id" type="text"></td></tr><tr><td><input type="button" value="Login"
+    onClick="pasuser(this.form)"></td><td><input
+    type="Reset"></form>
+    <h1><i><b></b></i></h1><input name="pass"
+    type="password">
 
     	<h1>Les différents fromages et leurs utilisations</h1> <!-- Titre (h1) -->
 
@@ -40,13 +63,9 @@ Bienvenue
   			<li><a href="#">lien sous menu 3</a></li>
   		</ul>
   	</li>
-  	<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-  		<ul>
-  			<li><a href="#">Lien sous menu 4</a></li>
-  			<li><a href="#">Lien sous menu 4</a></li>
-  			<li><a href="#">Lien sous menu 4</a></li>
-  			<li><a href="#">Lien sous menu 4</a></li>
-  		</ul>
+  	<li><a href="Login.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+
   	</li>
   </ul>
   </body>

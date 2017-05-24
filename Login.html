@@ -11,46 +11,20 @@
   font-size: 30px }
     </style>
   </head>
-  <body>
-    <script language="javascript">
-    <!--//
-    /*This Script allows people to enter by using a form that asks for a
-    UserID and Password*/
-    function pasuser(form) {
-    if (form.id.value=="JavaScript") {
-    if (form.pass.value=="Kit") {
-    location="register.html"
-    } else {
-    alert("Invalid Password")
-    }
-    } else {  alert("Invalid UserID")
-    }
-    }
-    //-->
-    </script>
 
-    <center>
-
-    <div class=title><center><h1><i><b>Login
-    Area</b></i></h1></center>
-    <div class=title><tr><td><h1><i><b>UserID:</b></i></h1></td><td><form name="login"><input
-    name="id" type="text"></td></tr>
-    <div class=title><tr><td><h1><i><b>Password:</b></i></h1></td><td><input name="pass"
-    type="password"></td></tr>
-  <center><input type="button" value="Login"
-    onClick="pasuser(this.form)"></center><center><br><input
-    type="Reset"></form></table></center>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
-    <center><input type=button onClick="parent.location='nouv-compte.html'" value='Créer un compte'>
-  </body>
   <body>
     <div id="accountButtons">
       <form method="GET" action="" id="accountForm">
-        <input type="text" name="username" value="" placeholder="Nom d'utilisateur">
-        <input type="password" name="password" value="" placeholder="Mot de passe">
-        <button type="button" onclick="connect()">  Se connecter    </button>
-        <button type="button" onclick="window.location = 'Register/Register.html';">     Créer un compte </button>
+          <center>
+
+    <div class=title><center><h1><i><b>Login
+    Area</b></i></h1></center>
+          <div class=title><tr><td><h1><i><b>UserID:</b></i></h1></td><td>
+        <center><input type="text" name="username" value="" placeholder="Nom d'utilisateur">
+    <div class=title><tr><td><h1><i><b>Password:</b></i></h1></td><td>
+        <center><input type="password" name="password" value="" placeholder="Mot de passe">
+        <center><button type="button" onclick="connect()">  Se connecter    </button>
+        <center><button type="button" onclick="window.location = 'nouv-compte.html';">     Créer un compte </button>
   </form>
 
 </form>

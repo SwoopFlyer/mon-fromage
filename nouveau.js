@@ -35,7 +35,7 @@ function createUser () {
   pass1 = document.getElementById("Accounts").password.value
   pass2 = document.getElementById("Accounts").pPassword.value
   if ( pass1 != pass2) {
-    alert("Les mots de passes de correspondent pas !")
+    alert("Les mots de passes ne correspondent pas !")
     return
   } else {
     if (pass1 == "") {

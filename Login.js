@@ -19,6 +19,7 @@ function connect () {
     if (cache[i].Name == name && cache[i].Pass == pass) {
       document.getElementById("accountButtons").style = "display:none;"
       alert("Félicitation vous êtes connecté")
+	  window.location = 'session.html'
     } else {
       alert("Nom d'utilisateur ou votre mot de passe sont incorectes ")
     }
